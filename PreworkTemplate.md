@@ -36,7 +36,7 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented required features:
 ![Video Walkthrough](https://imgur.com/bl4TXKT.gif)
 
-![img_1.png](img_1.png)
+![Demo](Gif-ezgif.com-video-to-gif-converter.gif)
 
 ## Notes
 
