@@ -1,0 +1,152 @@
+.view-creator-container {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    min-height: 100vh;
+    width: 100vw;    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.creator-name{
+    color: black !important;
+}
+.description{
+    color: black !important;
+}
+.creator-card {
+    background-color: #161b22;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.creator-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.creator-details {
+    flex: 1;
+}
+
+.creator-details h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #58a6ff;
+}
+
+.creator-details p {
+    font-size: 1rem;
+    color: #8b949e;
+}
+
+.creator-links {
+    margin: 20px 0;
+}
+
+.creator-links a {
+    display: block;
+    color: #58a6ff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.creator-links a i {
+    margin-right: 10px;
+}
+
+.creator-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn {
+    background-color: #3f72af;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    opacity: 0.9;
+}
+
+.edit-creator-form {
+    background-color: #0d1117;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.edit-creator-form h1 {
+    color: #58a6ff;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.edit-creator-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    color: #c9d1d9;
+    font-size: 1rem;
+}
+
+.edit-creator-form input::placeholder {
+    color: #8b949e;
+}
+
+.edit-creator-form button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.update-button {
+    background-color: #238636;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.update-button:hover {
+    background-color: #2ea043;
+}
+.card-content{
+    color: black;
+}
+.delete-button {
+    background-color: #da3633;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #f85149;
+}

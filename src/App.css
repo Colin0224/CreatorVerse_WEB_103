@@ -1,0 +1,88 @@
+/* Root Container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo Styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms, transform 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.05); /* Slight scale on hover for emphasis */
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Keyframes for Logo Spin */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply Spin Animation Based on User Preference */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card Container */
+.card {
+  max-width: 300px;
+  margin: 1rem auto; /* Center the card in its container */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #fff; /* Ensure background is white */
+  text-align: left; /* Align text to the left for better readability */
+  transition: transform 300ms, box-shadow 300ms; /* Smooth transition effects */
+}
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Card Image Styling */
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  margin-bottom: 1rem; /* Space between the image and content */
+}
+
+/* Button Styling */
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 300ms, transform 300ms;
+}
+.btn:hover {
+  background-color: #0056b3; /* Darken button on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Additional Styling */
+.read-the-docs {
+  color: #666; /* Darker shade for better contrast */
+  font-size: 0.875rem; /* Slightly smaller font size */
+  margin-top: 1rem;
+  display: block; /* Block display for better layout control */
+}
