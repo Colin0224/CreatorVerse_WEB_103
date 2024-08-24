@@ -7,6 +7,12 @@
     align-items: center;
     padding: 20px;
 }
+.card-content{
+    width: 100%;
+}
+.article-content{
+    width: 100%;
+}
 .creator-name{
     color: black !important;
 }
