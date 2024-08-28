@@ -35,7 +35,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-![Demo](CodePath-ezgif.com-video-to-gif-converter.gif)
+![Demo](CodePath.gif)
 
 ## Notes
 
