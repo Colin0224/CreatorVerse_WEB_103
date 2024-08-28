@@ -11,8 +11,8 @@ function App() {
       
       <Routes>
         <Route path="/" element={<ShowCreators />} />
-        <Route path="/creator/:id" element={<ViewCreator />} />
-        <Route path="/edit/:id" element={<EditCreator />} />
+        <Route path="/creator/:name" element={<ViewCreator />} />
+        <Route path="/edit/:name" element={<EditCreator />} />
         <Route path="/add" element={<AddCreator />} />
       </Routes>
     </Router>

@@ -45,10 +45,10 @@ function CreatorCard({ creator }) {
                 </div>
                 <p className="description">{creator.description}</p>
                 <div className="card-footer" style={{ display: "flex", justifyContent: "space-between" }}>
-                    <Link to={`/creator/${creator.id}`} className="icon-link">
+                    <Link to={`/creator/${encodeURIComponent(creator.name)}`} className="icon-link">
                         <FontAwesomeIcon icon={faCircleInfo} aria-hidden="true" />
                     </Link>
-                    <Link to={`/edit/${creator.id}`} className="icon-link">
+                    <Link to={`/edit/${encodeURIComponent(creator.name)}`} className="icon-link">
                         <FontAwesomeIcon icon={faPen} aria-hidden="true" />
                     </Link>
                 </div>

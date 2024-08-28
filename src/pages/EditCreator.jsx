@@ -3,7 +3,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { supabase } from "../client";
 
 function EditCreator() {
-  const { id } = useParams();
+  const { name } = useParams(); // Use name instead of id
   const navigate = useNavigate();
   const [creator, setCreator] = useState({
     name: "",
@@ -22,8 +22,8 @@ function EditCreator() {
         const { data, error } = await supabase
             .from("creators")
             .select("*")
-            .eq("id", id)
-            .single();
+            .eq("name", name) // Query by name instead of id
+            .single(); // Expecting a single record
 
         if (error) {
           console.error("Error fetching creator:", error);
@@ -39,7 +39,7 @@ function EditCreator() {
     };
 
     fetchCreator();
-  }, [id]);
+  }, [name]); // name is now the dependency
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -55,14 +55,14 @@ function EditCreator() {
       const { error } = await supabase
           .from("creators")
           .update(creator)
-          .eq("id", id);
+          .eq("name", name); // Update by name instead of id
 
       if (error) {
         console.error("Error updating creator:", error);
         return;
       }
 
-      navigate(`/creator/${id}`);
+      navigate(``); // Navigate using name
     } catch (error) {
       console.error("Unexpected error during update:", error);
     }
@@ -70,7 +70,10 @@ function EditCreator() {
 
   const handleDelete = async () => {
     try {
-      const { error } = await supabase.from("creators").delete().eq("id", id);
+      const { error } = await supabase
+          .from("creators")
+          .delete()
+          .eq("name", name); // Delete by name instead of id
 
       if (error) {
         console.error("Error deleting creator:", error);

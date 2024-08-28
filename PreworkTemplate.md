@@ -34,9 +34,8 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
-![Video Walkthrough](https://imgur.com/bl4TXKT.gif)
 
-![Demo](Gif-ezgif.com-video-to-gif-converter.gif)
+![Demo](CodePath-ezgif.com-video-to-gif-converter.gif)
 
 ## Notes
 
